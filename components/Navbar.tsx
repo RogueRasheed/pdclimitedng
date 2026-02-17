@@ -31,15 +31,7 @@ const Navbar = () => {
             Contact
           </Link>
         </nav>
-
-        {/* Desktop CTA */}
-        <Link
-          href="/contact"
-          className="hidden rounded-md bg-amber-500 px-5 py-2 font-semibold text-slate-900 hover:bg-amber-400 md:block"
-        >
-          Get a Quote
-        </Link>
-
+        
         {/* Mobile Menu Button */}
         <button
           onClick={() => setOpen(!open)}
