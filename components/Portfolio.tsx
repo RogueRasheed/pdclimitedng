@@ -4,12 +4,13 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 const FeaturedProjects = () => {
   const projects = [
-    {
-      title: "Extension of Oil Mill",
-      location: "Presco Oil Plc, Benin",
-      category: "Industrial",
-      image: "/images/oilmill.jpg", 
-      description: "Comprehensive civil works and structural foundations for the expansion of industrial oil milling facilities."
+    { 
+    title: "Residential Development For Efosa Airhunmwunde Lot",
+    location: "Port Antonio, Portland, Jamaica",
+    category: "Residential",
+    image: "/images/efosa2.jpg",
+    description:
+      "Expansion of the master-planned residential estate development.",
     },
     {
       title: "Rail Track Extension",

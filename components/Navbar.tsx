@@ -13,7 +13,7 @@ const Navbar = () => {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         {/* Logo */}
         <Link href="/" className="text-2xl font-bold text-white">
-          PDC Nigeria
+          PDC Limited Nigeria
         </Link>
 
         {/* Desktop Nav */}
@@ -31,7 +31,7 @@ const Navbar = () => {
             Contact
           </Link>
         </nav>
-        
+
         {/* Mobile Menu Button */}
         <button
           onClick={() => setOpen(!open)}

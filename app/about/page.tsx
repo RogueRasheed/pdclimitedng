@@ -31,9 +31,9 @@ const managementTeam = [
 
 const AboutPage = () => {
   return (
-    <main className="pt-20">
+    <main className="pt-0">
       {/* 1. Hero Section */}
-      <section className="bg-slate-900 text-white py-24 px-6">
+      <section className="bg-slate-900 text-white py-24 px-6 pt-50">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-extrabold mb-6 uppercase tracking-tight">Building Excellence Since 1992</h1>
           <p className="text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed">
