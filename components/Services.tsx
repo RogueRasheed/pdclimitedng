@@ -1,43 +1,43 @@
 import React from 'react';
 import { 
-  Business, 
-  Architecture, 
-  ContentPaste, 
-  WaterDrop, 
-  Lightbulb, 
-  LocalShipping 
-} from '@mui/icons-material'; // Or your preferred icon library
+  Business as BusinessIcon, 
+  Architecture as ArchitectureIcon, 
+  AssignmentTurnedIn as AssignmentIcon, 
+  WaterDrop as WaterDropIcon, 
+  Lightbulb as LightbulbIcon, 
+  PrecisionManufacturing as EngineeringIcon 
+} from '@mui/icons-material';
 
 const services = [
   {
     title: "Civil & Building Engineering",
-    description: "Expertise in roads, rail track extensions, and large-scale residential estate development.",
-    icon: <Business className="w-8 h-8 text-amber-500" />,
+    description: "Expertise in roads, rail track extensions, and large-scale residential estate development[cite: 404].",
+    icon: <BusinessIcon sx={{ fontSize: 32, color: '#f59e0b' }} />,
   },
   {
     title: "Architectural Design",
-    description: "Conceptual formulation and detailed designs that ensure project viability and sustainability.",
-    icon: <Architecture className="w-8 h-8 text-amber-500" />,
+    description: "Conceptual formulation and detailed designs that ensure project viability and sustainability[cite: 396, 400].",
+    icon: <ArchitectureIcon sx={{ fontSize: 32, color: '#f59e0b' }} />,
   },
   {
     title: "Project Management",
-    description: "Comprehensive oversight from pre-investment studies to final implementation and supervision.",
-    icon: <ContentPaste className="w-8 h-8 text-amber-500" />,
+    description: "Comprehensive oversight from pre-investment studies to final implementation and supervision[cite: 401, 402].",
+    icon: <AssignmentIcon sx={{ fontSize: 32, color: '#f59e0b' }} />,
   },
   {
     title: "Water Engineering",
-    description: "Specialized services in water supply, distribution systems, and industrial storage solutions.",
-    icon: <WaterDrop className="w-8 h-8 text-amber-500" />,
+    description: "Specialized services in water supply, distribution systems, and industrial storage solutions[cite: 405].",
+    icon: <WaterDropIcon sx={{ fontSize: 32, color: '#f59e0b' }} />,
   },
   {
     title: "Technical Consultancy",
-    description: "Providing institutional development and financial/commercial analysis for complex projects.",
-    icon: <Lightbulb className="w-8 h-8 text-amber-500" />,
+    description: "Providing institutional development and financial/commercial analysis for complex projects[cite: 392, 398].",
+    icon: <LightbulbIcon sx={{ fontSize: 32, color: '#f59e0b' }} />,
   },
   {
     title: "Industrial Facilities",
-    description: "Construction and maintenance for corporate giants like Presco Plc and leading financial institutions.",
-    icon: <LocalShipping className="w-8 h-8 text-amber-500" />,
+    description: "Construction and maintenance for corporate giants like Presco Plc and leading financial institutions[cite: 410, 415].",
+    icon: <EngineeringIcon sx={{ fontSize: 32, color: '#f59e0b' }} />,
   },
 ];
 
@@ -51,17 +51,13 @@ const ServicesSection = () => {
         <p className="text-4xl md:text-5xl font-extrabold text-slate-900">
           World-Class Solutions <br /> For Complex Challenges
         </p>
-        <p className="mt-6 text-slate-600 max-w-2xl mx-auto text-lg">
-          PDC offers a systematic approach to project design and development, 
-          leveraging over 30 years of experience in the Nigerian construction landscape.
-        </p>
       </div>
 
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {services.map((service, index) => (
           <div 
             key={index} 
-            className="group p-8 bg-slate-50 border border-slate-200 rounded-xl hover:bg-slate-900 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
+            className="group p-8 bg-slate-50 border border-slate-200 rounded-xl hover:bg-slate-900 transition-all duration-300"
           >
             <div className="mb-6 inline-block p-3 bg-white rounded-lg shadow-sm group-hover:bg-slate-800 transition-colors">
               {service.icon}
@@ -74,15 +70,6 @@ const ServicesSection = () => {
             </p>
           </div>
         ))}
-      </div>
-
-      <div className="mt-16 text-center">
-        <a 
-          href="/services" 
-          className="inline-flex items-center gap-2 font-bold text-slate-900 border-b-2 border-amber-500 pb-1 hover:text-amber-600 transition-colors"
-        >
-          Explore Detailed Services <span>&rarr;</span>
-        </a>
       </div>
     </section>
   );
