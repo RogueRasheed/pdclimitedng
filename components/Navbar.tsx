@@ -21,9 +21,6 @@ const Navbar = () => {
           <Link href="/about" className="text-gray-300 hover:text-white">
             About
           </Link>
-          <Link href="/services" className="text-gray-300 hover:text-white">
-            Services
-          </Link>
           <Link href="/projects" className="text-gray-300 hover:text-white">
             Projects
           </Link>
@@ -54,13 +51,6 @@ const Navbar = () => {
               About
             </Link>
             <Link
-              href="/services"
-              onClick={() => setOpen(false)}
-              className="text-lg hover:text-amber-400"
-            >
-              Services
-            </Link>
-            <Link
               href="/projects"
               onClick={() => setOpen(false)}
               className="text-lg hover:text-amber-400"
@@ -76,11 +66,11 @@ const Navbar = () => {
             </Link>
 
             <Link
-              href="/contact"
+              href="tel:+2348036733696"
               onClick={() => setOpen(false)}
               className="mt-4 w-fit rounded-md bg-amber-500 px-6 py-3 font-semibold text-slate-900 hover:bg-amber-400"
             >
-              Get a Quote
+              Call Us
             </Link>
           </div>
         </div>
