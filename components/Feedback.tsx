@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { db } from '@/lib/firebase';
-import { collection, addDoc, query, onSnapshot, orderBy, Timestamp } from 'firebase/firestore';
+import { collection, addDoc, query, onSnapshot, orderBy, Timestamp, serverTimestamp } from 'firebase/firestore';
 import { 
   FormatQuote as QuoteIcon, Star as StarIcon, 
   VerifiedUser as VerifiedIcon, AddComment as AddCommentIcon, Close as CloseIcon 
@@ -51,7 +51,7 @@ const TestimonialsAndFeedback = () => {
     try {
       await addDoc(collection(db, "pdc_reviews"), {
         ...newReview,
-        createdAt: new Date(),
+        createdAt: serverTimestamp(),
         approved: true // Keeping it TRUE for now so you can see it work immediately!
       });
       
