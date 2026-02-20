@@ -29,7 +29,7 @@ const TestimonialsAndFeedback = () => {
   // 1. LIVE DATA: Get only APPROVED reviews from Firebase
   useEffect(() => {
     const q = query(
-      collection(db, "reviews"), 
+      collection(db, "pdc_reviews"), 
       // where("approved", "==", true), // Uncomment this line after you've approved a few!
       orderBy("createdAt", "desc")
     );
@@ -49,7 +49,7 @@ const TestimonialsAndFeedback = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      await addDoc(collection(db, "reviews"), {
+      await addDoc(collection(db, "pdc_reviews"), {
         ...newReview,
         createdAt: new Date(),
         approved: true // Keeping it TRUE for now so you can see it work immediately!
